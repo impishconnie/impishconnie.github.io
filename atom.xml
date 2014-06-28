@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Connie Green]]></title>
+  <link href="http://conniegreen.github.io/atom.xml" rel="self"/>
+  <link href="http://conniegreen.github.io/"/>
+  <updated>2014-06-28T02:38:03-04:00</updated>
+  <id>http://conniegreen.github.io/</id>
+  <author>
+    <name><![CDATA[Constanza Green]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+</feed>
