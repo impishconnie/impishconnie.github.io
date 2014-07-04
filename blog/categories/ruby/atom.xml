@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Ruby | Connie Green]]></title>
   <link href="http://conniegreen.github.io/blog/categories/ruby/atom.xml" rel="self"/>
   <link href="http://conniegreen.github.io/"/>
-  <updated>2014-07-04T05:58:49-04:00</updated>
+  <updated>2014-07-04T07:24:27-04:00</updated>
   <id>http://conniegreen.github.io/</id>
   <author>
     <name><![CDATA[Constanza Green]]></name>
@@ -15,15 +15,15 @@
   
   <entry>
     <title type="html"><![CDATA[This Is Finally Working]]></title>
-    <link href="http://conniegreen.github.io/blog/2014/07/04/gemfiles-and-stuff/"/>
-    <updated>2014-07-04T05:02:32-04:00</updated>
-    <id>http://conniegreen.github.io/blog/2014/07/04/gemfiles-and-stuff</id>
+    <link href="http://conniegreen.github.io/blog/2014/07/01/this-is-finally-working/"/>
+    <updated>2014-07-01T00:00:00-04:00</updated>
+    <id>http://conniegreen.github.io/blog/2014/07/01/this-is-finally-working</id>
     <content type="html"><![CDATA[<p>This (the blog you are reading right now) is finally working! It started as a way to test <a href="https://pages.github.com/">Github Pages</a> but i guess since it&rsquo;s up, i might as well use it by documenting what i got wrong and how i fixed it.</p>
-
-<p>If you haven&rsquo;t figured out yet, i&rsquo;m using <a href="http://octopress.org">Octropress</a> which makes it easy get the page set with a few commands on the terminal, except of course when things don&rsquo;t work as intended, and it can happen often when you don&rsquo;t know what you are doing, like myself.</p>
 
 <!-- more -->
 
+
+<p>If you haven&rsquo;t figured out yet, i&rsquo;m using <a href="http://octopress.org">Octropress</a> which makes it easy get the page set with a few commands on the terminal, except of course when things don&rsquo;t work as intended, and it can happen often when you don&rsquo;t know what you are doing, like myself.</p>
 
 <p>My very first issue was with bundler:</p>
 

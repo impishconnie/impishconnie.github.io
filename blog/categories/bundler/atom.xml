@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Bundler | Connie Green]]></title>
   <link href="http://conniegreen.github.io/blog/categories/bundler/atom.xml" rel="self"/>
   <link href="http://conniegreen.github.io/"/>
-  <updated>2014-07-04T05:58:49-04:00</updated>
+  <updated>2014-07-04T07:24:27-04:00</updated>
   <id>http://conniegreen.github.io/</id>
   <author>
     <name><![CDATA[Constanza Green]]></name>
@@ -14,16 +14,52 @@
 
   
   <entry>
-    <title type="html"><![CDATA[This Is Finally Working]]></title>
-    <link href="http://conniegreen.github.io/blog/2014/07/04/gemfiles-and-stuff/"/>
-    <updated>2014-07-04T05:02:32-04:00</updated>
-    <id>http://conniegreen.github.io/blog/2014/07/04/gemfiles-and-stuff</id>
-    <content type="html"><![CDATA[<p>This (the blog you are reading right now) is finally working! It started as a way to test <a href="https://pages.github.com/">Github Pages</a> but i guess since it&rsquo;s up, i might as well use it by documenting what i got wrong and how i fixed it.</p>
-
-<p>If you haven&rsquo;t figured out yet, i&rsquo;m using <a href="http://octopress.org">Octropress</a> which makes it easy get the page set with a few commands on the terminal, except of course when things don&rsquo;t work as intended, and it can happen often when you don&rsquo;t know what you are doing, like myself.</p>
+    <title type="html"><![CDATA[New Theme on the Way]]></title>
+    <link href="http://conniegreen.github.io/blog/2014/07/04/new-theme-on-the-way/"/>
+    <updated>2014-07-04T00:00:00-04:00</updated>
+    <id>http://conniegreen.github.io/blog/2014/07/04/new-theme-on-the-way</id>
+    <content type="html"><![CDATA[<p>I feel like i can&rsquo;t call this &ldquo;My blog&rdquo; if it looks just like every other <a href="http://www.octopress.org">Octopress</a> blog, and since this project started with educational purposes, i decided that instead of basing my theme on the default one, or even on one of the many <a href="https://github.com/imathis/octopress/wiki/3rd-Party-Octopress-Themes">3rd party themes</a> out there, i would make my own from scratch.</p>
 
 <!-- more -->
 
+
+<p>I decided to use some of the tools that i learned about while getting Octopress running, like <a href="http://compass-style.org/">Compass</a> and <a href="http://sass-lang.com/">Sass</a> (<a href="http://www.sassnotsass.com/">not SASS</a>). But of course my short attention span wouldn&rsquo;t let me just go ahead and read on those and get on with the project so i ended up adding <a href="http://susy.oddbird.net/">Susy</a> and <a href="http://breakpoint-sass.com/">Breakpoint</a> into the mix, but this brought a little problem</p>
+
+<pre><code>Unable to activate breakpoint-2.4.2, because sass-3.2.19 conflicts with sass &lt;~&gt; 3.3.0
+</code></pre>
+
+<p>This lead me to use and learn about <a href="http://bundler.io/">Bundler</a> as recommended by <a href="https://github.com/Team-Sass/breakpoint/wiki/Installation#requirements">Breakpoint&rsquo;s wiki</a>, i knew some about this as <strong>bundle install</strong> is required by Octopress, but at the time, i didn&rsquo;t really know what that did.</p>
+
+<p>So basically what Bundler does, is get&rsquo;s a list of gems, like Compass or Sass for example, from a <a href="http://bundler.io/v1.6/gemfile.html">Gemfile</a> in your project and installs them, but what&rsquo;s more important, you can specify what version do you want installed, and Bundler makes sure your project uses those versions so you can make sure there&rsquo;s no conflicts.</p>
+
+<p>For my theme what i did was go to <a href="https://rubygems.org">https://rubygems.org</a> and check the gems i needed, version, dependencies and all that and ended up with this.</p>
+
+<pre><code>source "https://rubygems.org"
+
+gem 'sass', '~&gt; 3.3.9'
+gem 'compass', '~&gt; 1.0.0.alpha.19'
+gem 'compass-normalize', '~&gt; 1.5'
+gem 'susy', '~&gt; 2.1.2'
+gem 'breakpoint', '~&gt; 2.4.2'
+</code></pre>
+
+<p>I&rsquo;m not sure <em>1.0.0.alpha.19</em> should be used, since it&rsquo;s it an alpha version and it&rsquo;s probably buggy, but i&rsquo;m still learning, and this is the fix i found.</p>
+
+<p>I&rsquo;ll keep on working on the theme and see where it leads me, and hopefully i&rsquo;ll finish it.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[This Is Finally Working]]></title>
+    <link href="http://conniegreen.github.io/blog/2014/07/01/this-is-finally-working/"/>
+    <updated>2014-07-01T00:00:00-04:00</updated>
+    <id>http://conniegreen.github.io/blog/2014/07/01/this-is-finally-working</id>
+    <content type="html"><![CDATA[<p>This (the blog you are reading right now) is finally working! It started as a way to test <a href="https://pages.github.com/">Github Pages</a> but i guess since it&rsquo;s up, i might as well use it by documenting what i got wrong and how i fixed it.</p>
+
+<!-- more -->
+
+
+<p>If you haven&rsquo;t figured out yet, i&rsquo;m using <a href="http://octopress.org">Octropress</a> which makes it easy get the page set with a few commands on the terminal, except of course when things don&rsquo;t work as intended, and it can happen often when you don&rsquo;t know what you are doing, like myself.</p>
 
 <p>My very first issue was with bundler:</p>
 

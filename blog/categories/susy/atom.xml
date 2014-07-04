@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Category: Octopress | Connie Green]]></title>
-  <link href="http://conniegreen.github.io/blog/categories/octopress/atom.xml" rel="self"/>
+  <title><![CDATA[Category: Susy | Connie Green]]></title>
+  <link href="http://conniegreen.github.io/blog/categories/susy/atom.xml" rel="self"/>
   <link href="http://conniegreen.github.io/"/>
   <updated>2014-07-04T07:24:27-04:00</updated>
   <id>http://conniegreen.github.io/</id>
@@ -46,50 +46,6 @@ gem 'breakpoint', '~&gt; 2.4.2'
 <p>I&rsquo;m not sure <em>1.0.0.alpha.19</em> should be used, since it&rsquo;s it an alpha version and it&rsquo;s probably buggy, but i&rsquo;m still learning, and this is the fix i found.</p>
 
 <p>I&rsquo;ll keep on working on the theme and see where it leads me, and hopefully i&rsquo;ll finish it.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[This Is Finally Working]]></title>
-    <link href="http://conniegreen.github.io/blog/2014/07/01/this-is-finally-working/"/>
-    <updated>2014-07-01T00:00:00-04:00</updated>
-    <id>http://conniegreen.github.io/blog/2014/07/01/this-is-finally-working</id>
-    <content type="html"><![CDATA[<p>This (the blog you are reading right now) is finally working! It started as a way to test <a href="https://pages.github.com/">Github Pages</a> but i guess since it&rsquo;s up, i might as well use it by documenting what i got wrong and how i fixed it.</p>
-
-<!-- more -->
-
-
-<p>If you haven&rsquo;t figured out yet, i&rsquo;m using <a href="http://octopress.org">Octropress</a> which makes it easy get the page set with a few commands on the terminal, except of course when things don&rsquo;t work as intended, and it can happen often when you don&rsquo;t know what you are doing, like myself.</p>
-
-<p>My very first issue was with bundler:</p>
-
-<pre><code>Fetching gem metadata from https://rubygems.org/.......
-Fetching additional metadata from https://rubygems.org/..
-Using rake 10.3.2
-
-Gem::Installer::ExtensionBuildError: ERROR: Failed to build gem native extension.
-
-        /usr/bin/ruby1.9.1 extconf.rb
-/usr/lib/ruby/1.9.1/rubygems/custom_require.rb:36:in `require': cannot load such file -- mkmf (LoadError)
-        from /usr/lib/ruby/1.9.1/rubygems/custom_require.rb:36:in `require'
-        from extconf.rb:1:in `&lt;main&gt;'
-
-
-Gem files will remain installed in /home/green/dev/octopress/vendor/bundle/ruby/1.9.1/gems/RedCloth-4.2.9 for inspection.
-Results logged to /home/green/dev/octopress/vendor/bundle/ruby/1.9.1/gems/RedCloth-4.2.9/ext/redcloth_scan/gem_make.out
-An error occurred while installing RedCloth (4.2.9), and Bundler cannot
-continue.
-Make sure that `gem install RedCloth -v '4.2.9'` succeeds before bundling.
-</code></pre>
-
-<p>so i did what i always do, i googled, and i ended up where i always end, Stackoverflow, and <a href="http://stackoverflow.com/a/14353864">this</a> fixed my problem, not the whole thing but</p>
-
-<pre><code>$ sudo apt-get install ruby1.9.1-full 
-</code></pre>
-
-<p>I&rsquo;m a bit sad not knowing exactly why, but happy that it worked, the rest was just following Octopress' <a href="http://octopress.org/docs/deploying/github/">docs</a> and the blog was up and running.</p>
-
-<p>Next step is building my own theme, but that is left for another post.</p>
 ]]></content>
   </entry>
   
