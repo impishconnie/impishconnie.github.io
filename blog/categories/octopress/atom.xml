@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Connie Green]]></title>
-  <link href="http://conniegreen.github.io/atom.xml" rel="self"/>
+  <title><![CDATA[Category: Octopress | Connie Green]]></title>
+  <link href="http://conniegreen.github.io/blog/categories/octopress/atom.xml" rel="self"/>
   <link href="http://conniegreen.github.io/"/>
   <updated>2014-07-04T05:58:49-04:00</updated>
   <id>http://conniegreen.github.io/</id>
@@ -51,7 +51,7 @@ Make sure that `gem install RedCloth -v '4.2.9'` succeeds before bundling.
 <pre><code>$ sudo apt-get install ruby1.9.1-full 
 </code></pre>
 
-<p>I&rsquo;m a bit sad not knowing exactly why, but happy that it worked, the rest was just following Octopress&#8217; <a href="http://octopress.org/docs/deploying/github/">docs</a> and the blog was up and running.</p>
+<p>I&rsquo;m a bit sad not knowing exactly why, but happy that it worked, the rest was just following Octopress' <a href="http://octopress.org/docs/deploying/github/">docs</a> and the blog was up and running.</p>
 
 <p>Next step is building my own theme, but that is left for another post.</p>
 ]]></content>
